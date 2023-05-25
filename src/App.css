@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: #4337aa;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  background-color: #4337aa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-right: 1px solid #ddd; /* add this line */
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #48c748;
+  color: white;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.selector-label {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.selector-container {
+  align-items: left;
+  margin-left: 20px;
+}
+
+select {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.popover {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  max-width: 200px;
+  display: none; /* Hidden by default */
+  pointer-events: none; /* Ignore mouse events */
+}
+
+.popover-show {
+  display: block; /* Show the popover */
+  pointer-events: auto;
+}
+
+.popover-toggle {
+  cursor: pointer;
+  background-color: #ddd;
+  margin-left: 20px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
